@@ -1,0 +1,19 @@
+module "function_app" {
+  source = "./function_app"
+  function_app_name       = var.function_app_name
+  location                = var.location
+  resource_group_name     = var.resource_group_name
+  app_service_plan_id     = var.app_service_plan_id
+  app_settings            = var.app_settings
+  auth_settings           = var.auth_settings
+  connection_string       = var.connection_string
+  client_cert_mode        = var.client_cert_mode
+  daily_memory_time_quota = var.daily_memory_time_quota
+  enabled                 = var.enabled
+  enable_builtin_logging  = var.enable_builtin_logging
+  https_only              = var.https_only
+  min_tls_version         = var.min_tls_version
+  runtime_scale_monitoring_enabled = var.runtime_scale_monitoring_enabled
+  websockets_enabled      = var.websockets_enabled
+  auto_swap_slot_name     = var.auto_swap_slot_name
+}
